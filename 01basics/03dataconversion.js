@@ -1,4 +1,4 @@
-let d1=true
+/*let d1=true
 console.log(typeof(d1))
 let cond1=Number(d1);
 console.log(typeof cond1);
@@ -13,4 +13,9 @@ console.log(Boolean(str))
 // in BOOLEAN empty string=>false;string=>true
 let someNumber=33
 console.log(String(someNumber))
-console.log(typeof(String(someNumber)))
+console.log(typeof(String(someNumber)))*/
+//********operations
+console.log(1+2+"3");
+console.log("1"+2+3);
+console.log(-true)
+console.log(+"")
