@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:plum;">
+    <h2>amazing images</h2>
+    <div>
+       <ul id="images">
+          <li><img src="./images/Screenshot (1561).png" alt="Image 1" width="300" id="image1">
+          </li>
+          <li><img src="./images/Screenshot (1562).png" alt="Image 2" width="300" id="image2">
+          </li>
+          <li><a href="https://google.com" id="google" >Google</a></li>
+       </ul>
+    </div>
+</body>
+<script>
+      //type of event,time of event,default  prevented
+  //target,toElemnt,srcElemnt,cuurentTarget
+  //clientX,clientY,screenX,screenY
+  //alt key,ctrl key,shift key,keyCode
+/*
+
+  document.getElementById("images").addEventListener('click',function(e){
+    console.log("clicked inside the ul");
+  });
+    document.getElementById("image1").addEventListener('click',function(e){
+    console.log("clicked image 1");
+    e.stopPropagation();
+  });
+ document.getElementById('google').addEventListener("click",function(e){
+    e.preventDefault();
+    e.stopPropagation();
+     console.log("clicked google link");
+ })
+
+ */
+
+document.querySelector('#images').addEventListener('click',function(e){
+  console.log(e.target.tagName);
+if(e.target.tagName=='IMG'){
+    console.log(e.target.id);
+ let removeIt=e.target.parentNode;
+  removeIt.remove();   
+}
+  
+  //removeIt.parentNode.removeChild(removeIt);
+ 
+})
+</script>
+</html>
